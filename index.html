@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гегель vs Кант</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+    width: 300px;
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  #result {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .error-message {
+    font-family: monospace;
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Гегель vs Кант</h1>
+  <p>Кто ваш фаворит?</p>
+  <button class="button" id="hegelButton">Выбрать Гегеля</button>
+  <button class="button" id="kantButton">Выбрать Канта</button>
+  <p id="result"></p>
+</div>
+
+<script>
+  const hegelButton = document.getElementById('hegelButton');
+  const kantButton = document.getElementById('kantButton');
+  const resultDisplay = document.getElementById('result');
+
+  hegelButton.addEventListener('click', () => {
+    resultDisplay.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+  });
+
+  kantButton.addEventListener('click', () => {
+    resultDisplay.innerHTML = '<div class="error-message"><h2>Критическая ошибка</h2><p>Нельзя загрузить Канта. Слишком много категорий!</p></div>';
+  });
+</script>
+
+</body>
+</html>
