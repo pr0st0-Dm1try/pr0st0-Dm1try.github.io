@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: background-image 0.3s ease-in-out;
   }
 
   .container {
@@ -22,8 +23,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    max-width: 90%;
-    width: 300px;
   }
 
   h1 {
@@ -91,6 +90,7 @@
   const resultDisplay = document.getElementById('result');
 
   hegelButton.addEventListener('click', () => {
+    document.body.style.backgroundImage = 'url("https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Rick_Astley_-_Never_Gonna_Give_You_Up.png/220px-Rick_Astley_-_Never_Gonna_Give_You_Up.png")';
     resultDisplay.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
   });
 
